@@ -1,114 +1,353 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.11.9 on win32)" generated="2025-09-02T00:53:09.673422" rpa="false" schemaversion="5">
-<suite id="s1" name="Login Test" source="C:\Users\PC\Documents\RobotTesting\robot-testing\src\tests\e2e\login_test.robot">
-<test id="s1-t1" name="Login with correct Username and Password" line="5">
-<kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-09-02T00:53:09.794066" level="INFO">Opening browser 'chrome' to base url 'https://ivvi.dev'.</msg>
-<arg>https://ivvi.dev</arg>
-<arg>chrome</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-09-02T00:53:09.794066" elapsed="3.054057"/>
+<robot generator="Robot 7.3.2 (Python 3.11.9 on win32)" generated="2025-09-02T19:49:20.623843" rpa="false" schemaversion="5">
+<suite id="s1" name="Login Browser" source="C:\Users\PC\Documents\RobotTesting\robot-testing\src\tests\e2e\login_browser.robot">
+<test id="s1-t1" name="Login With Valid Credentials" line="10">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-09-02T19:49:20.719281" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\PC\\Documents\\RobotTesting\\robot-testing\\browser\\traces\\temp\\30ef417e-e881-460a-8fbf-d40c79c423f6"}</msg>
+<msg time="2025-09-02T19:49:20.731831" level="INFO">Starting Browser process C:\Users\PC\AppData\Local\Programs\Python\Python311\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:63431</msg>
+<msg time="2025-09-02T19:49:21.472985" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\PC\\Documents\\RobotTesting\\robot-testing\\browser\\traces\\temp\\30ef417e-e881-460a-8fbf-d40c79c423f6"}</msg>
+<arg>chromium</arg>
+<arg>headless=false</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-09-02T19:49:20.718102" elapsed="0.754883"/>
 </kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-09-02T00:53:12.848123" level="INFO">Clicking element 'xpath=//*[contains(text(), "Login")]'.</msg>
-<arg>xpath=//*[contains(text(), "Login")]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-02T00:53:12.848123" elapsed="0.571013"/>
+<kw name="New Context" owner="Browser">
+<msg time="2025-09-02T19:49:21.474238" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": false,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "height": 1080,
+    "width": 1920
+  }
+}</msg>
+<msg time="2025-09-02T19:49:21.493286" level="INFO">Successfully created context. </msg>
+<msg time="2025-09-02T19:49:21.493286" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'height': 1080, 'width': 1920}}</msg>
+<arg>viewport={'width': 1920, 'height': 1080}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new BrowserContext with specified options.</doc>
+<status status="PASS" start="2025-09-02T19:49:21.472985" elapsed="0.020301"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-09-02T19:49:23.985748" level="INFO">Successfully initialized new page object and opened url: https://ivvi.dev</msg>
+<arg>${URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-09-02T19:49:21.493798" elapsed="2.491950"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-09-02T00:53:14.420943" level="INFO">Slept 1 second.</msg>
+<msg time="2025-09-02T19:49:24.987288" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-09-02T00:53:13.419136" elapsed="1.001807"/>
+<status status="PASS" start="2025-09-02T19:49:23.987254" elapsed="1.000034"/>
 </kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-09-02T00:53:14.421454" level="INFO">Typing text 'cecilwakeley@gmail.com' into text field 'css=input[type="email"]'.</msg>
-<arg>css=input[type="email"]</arg>
-<arg>cecilwakeley@gmail.com</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-02T00:53:14.421454" elapsed="0.069372"/>
+<kw name="Click" owner="Browser">
+<msg time="2025-09-02T19:49:24.988851" level="INFO">Clicks the element 'text=Login'.</msg>
+<arg>text=Login</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-09-02T19:49:24.987826" elapsed="0.416913"/>
 </kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-09-02T00:53:14.490826" level="INFO">Clicking element 'xpath=//*[contains(text(), "Continue")]'.</msg>
-<arg>xpath=//*[contains(text(), "Continue")]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-02T00:53:14.490826" elapsed="0.028499"/>
+<kw name="Click" owner="Browser">
+<msg time="2025-09-02T19:49:25.406228" level="INFO">Clicks the element 'input[type="email"]'.</msg>
+<arg>input[type="email"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-09-02T19:49:25.404739" elapsed="0.085000"/>
 </kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-09-02T00:53:17.519867" level="INFO">Slept 3 seconds.</msg>
-<arg>3s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-09-02T00:53:14.519325" elapsed="3.000542"/>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-09-02T19:49:25.489739" level="INFO">Fills the text 'cecilwakeley@gmail.com' in the given field.</msg>
+<arg>input[type="email"]</arg>
+<arg>${USERNAME}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-09-02T19:49:25.489739" elapsed="0.008582"/>
 </kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-09-02T00:53:17.521390" level="INFO">Typing text 'Beholdhowgood!133' into text field 'css=input[type="password"]'.</msg>
-<arg>css=input[type="password"]</arg>
-<arg>Beholdhowgood!133</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-02T00:53:17.520386" elapsed="0.067982"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-09-02T00:53:18.588904" level="INFO">Slept 1 second.</msg>
-<arg>1s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-09-02T00:53:17.588368" elapsed="1.000536"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-09-02T00:53:18.590441" level="INFO">Clicking element 'xpath=//*[contains(text(), "Continue")]'.</msg>
-<arg>xpath=//*[contains(text(), "Continue")]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-02T00:53:18.588904" elapsed="0.044128"/>
+<kw name="Click" owner="Browser">
+<msg time="2025-09-02T19:49:25.498321" level="INFO">Clicks the element 'text=Continue'.</msg>
+<arg>text=Continue</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-09-02T19:49:25.498321" elapsed="0.039936"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-09-02T00:53:19.633275" level="INFO">Slept 1 second.</msg>
-<arg>1s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-09-02T00:53:18.633032" elapsed="1.000243"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-09-02T00:53:19.633779" level="INFO">Clicking element 'xpath=//*[@id="js-octopus-app-container"]/div/div[1]/div[2]/div[5]/div/div[1]/div[2]/div/div/a'.</msg>
-<arg>xpath=//*[@id="js-octopus-app-container"]/div/div[1]/div[2]/div[5]/div/div[1]/div[2]/div/div/a</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-02T00:53:19.633779" elapsed="4.296856"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-09-02T00:53:24.930768" level="INFO">Slept 1 second.</msg>
-<arg>1s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-09-02T00:53:23.930635" elapsed="1.000133"/>
-</kw>
-<kw name="Press Keys" owner="SeleniumLibrary">
-<msg time="2025-09-02T00:53:24.932287" level="INFO">Sending key(s) ('TAB',) to xpath=//body element.</msg>
-<msg time="2025-09-02T00:53:25.262631" level="INFO">Pressing special key TAB to element.</msg>
-<msg time="2025-09-02T00:53:25.262631" level="INFO">Releasing special key TAB.</msg>
-<arg>xpath=//body</arg>
-<arg>TAB</arg>
-<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<status status="PASS" start="2025-09-02T00:53:24.931280" elapsed="0.345108"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-09-02T00:53:27.276669" level="INFO">Slept 2 seconds.</msg>
+<msg time="2025-09-02T19:49:27.539356" level="INFO">Slept 2 seconds.</msg>
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-09-02T00:53:25.276388" elapsed="2.000281"/>
+<status status="PASS" start="2025-09-02T19:49:25.538257" elapsed="2.001099"/>
 </kw>
-<kw name="Press Keys" owner="SeleniumLibrary">
-<msg time="2025-09-02T00:53:27.277673" level="INFO">Sending key(s) ('MyUsername',) to xpath=//body element.</msg>
-<msg time="2025-09-02T00:53:27.581300" level="INFO">Sending keys MyUsername</msg>
-<arg>xpath=//body</arg>
-<arg>MyUsername</arg>
-<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<status status="PASS" start="2025-09-02T00:53:27.276669" elapsed="0.322548"/>
+<kw name="Click" owner="Browser">
+<msg time="2025-09-02T19:49:27.542034" level="INFO">Clicks the element 'input[type="password"]'.</msg>
+<arg>input[type="password"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-09-02T19:49:27.539994" elapsed="0.054916"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-09-02T19:49:27.594910" level="INFO">Fills the text 'Beholdhowgood!133' in the given field.</msg>
+<arg>input[type="password"]</arg>
+<arg>${PASSWORD}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-09-02T19:49:27.594910" elapsed="0.008150"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-09-02T00:53:30.599776" level="INFO">Slept 3 seconds.</msg>
+<msg time="2025-09-02T19:49:28.603094" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-02T19:49:27.603060" elapsed="1.000034"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-09-02T19:49:28.605152" level="INFO">Clicks the element 'text=Continue'.</msg>
+<arg>text=Continue</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-09-02T19:49:28.604153" elapsed="0.042991"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-02T19:49:31.648243" level="INFO">Slept 3 seconds.</msg>
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-09-02T00:53:27.599217" elapsed="3.000559"/>
+<status status="PASS" start="2025-09-02T19:49:28.647144" elapsed="3.001099"/>
 </kw>
-<status status="PASS" start="2025-09-02T00:53:09.793065" elapsed="20.807224"/>
+<kw name="Click" owner="Browser">
+<msg time="2025-09-02T19:49:31.649258" level="INFO">Clicks the element 'xpath=//*[@id="js-octopus-app-container"]/div/div[1]/div[2]/div[5]/div/div[1]/div[2]'.</msg>
+<arg>xpath=//*[@id="js-octopus-app-container"]/div/div[1]/div[2]/div[5]/div/div[1]/div[2]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-09-02T19:49:31.648243" elapsed="1.915051"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-02T19:49:34.564434" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-02T19:49:33.563294" elapsed="1.001140"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-09-02T19:49:34.565945" level="INFO">Clicks the element 'css=#svg'.</msg>
+<arg>css=#svg</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-09-02T19:49:34.564941" elapsed="0.094956"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-02T19:49:35.661382" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-02T19:49:34.659897" elapsed="1.001485"/>
+</kw>
+<kw name="Mouse Move" owner="Browser">
+<msg time="2025-09-02T19:49:35.663403" level="INFO">Moving mouse to x: 1032.0, y: 175.0 coordinates.</msg>
+<arg>1032</arg>
+<arg>175</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Instead of selectors command mouse with coordinates.
+The Click commands will leave the virtual mouse on the specified coordinates.</doc>
+<status status="PASS" start="2025-09-02T19:49:35.661382" elapsed="0.010196"/>
+</kw>
+<kw name="Mouse Button" owner="Browser">
+<msg time="2025-09-02T19:49:35.673585" level="INFO">No coordinates where set. Action appears at current position.</msg>
+<msg time="2025-09-02T19:49:35.673585" level="INFO">No coordinates where set. Action appears at current position.</msg>
+<msg time="2025-09-02T19:49:35.684316" level="INFO">No coordinates where set. Action appears at current position.</msg>
+<arg>click</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clicks, presses or releases a mouse button.</doc>
+<status status="PASS" start="2025-09-02T19:49:35.672582" elapsed="0.014741"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-02T19:49:37.688231" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-02T19:49:35.687323" elapsed="2.000908"/>
+</kw>
+<kw name="Mouse Button" owner="Browser">
+<msg time="2025-09-02T19:49:37.691714" level="INFO">No coordinates where set. Action appears at current position.</msg>
+<msg time="2025-09-02T19:49:37.692762" level="INFO">No coordinates where set. Action appears at current position.</msg>
+<msg time="2025-09-02T19:49:37.705788" level="INFO">No coordinates where set. Action appears at current position.</msg>
+<arg>click</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clicks, presses or releases a mouse button.</doc>
+<status status="PASS" start="2025-09-02T19:49:37.689495" elapsed="0.029884"/>
+</kw>
+<kw name="Mouse Button" owner="Browser">
+<msg time="2025-09-02T19:49:37.721038" level="INFO">No coordinates where set. Action appears at current position.</msg>
+<msg time="2025-09-02T19:49:37.721038" level="INFO">No coordinates where set. Action appears at current position.</msg>
+<msg time="2025-09-02T19:49:37.733828" level="INFO">No coordinates where set. Action appears at current position.</msg>
+<arg>click</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clicks, presses or releases a mouse button.</doc>
+<status status="PASS" start="2025-09-02T19:49:37.720034" elapsed="0.019685"/>
+</kw>
+<kw name="Mouse Button" owner="Browser">
+<msg time="2025-09-02T19:49:37.739719" level="INFO">No coordinates where set. Action appears at current position.</msg>
+<msg time="2025-09-02T19:49:37.741098" level="INFO">No coordinates where set. Action appears at current position.</msg>
+<msg time="2025-09-02T19:49:37.744301" level="INFO">No coordinates where set. Action appears at current position.</msg>
+<arg>click</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clicks, presses or releases a mouse button.</doc>
+<status status="PASS" start="2025-09-02T19:49:37.739719" elapsed="0.005585"/>
+</kw>
+<kw name="Mouse Button" owner="Browser">
+<msg time="2025-09-02T19:49:37.746994" level="INFO">No coordinates where set. Action appears at current position.</msg>
+<msg time="2025-09-02T19:49:37.746994" level="INFO">No coordinates where set. Action appears at current position.</msg>
+<msg time="2025-09-02T19:49:37.749152" level="INFO">No coordinates where set. Action appears at current position.</msg>
+<arg>click</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clicks, presses or releases a mouse button.</doc>
+<status status="PASS" start="2025-09-02T19:49:37.746489" elapsed="0.004712"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-02T19:49:39.751561" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-02T19:49:37.751201" elapsed="2.000360"/>
+</kw>
+<kw name="Mouse Button" owner="Browser">
+<msg time="2025-09-02T19:49:39.754678" level="INFO">No coordinates where set. Action appears at current position.</msg>
+<msg time="2025-09-02T19:49:39.755888" level="INFO">No coordinates where set. Action appears at current position.</msg>
+<msg time="2025-09-02T19:49:39.794712" level="INFO">No coordinates where set. Action appears at current position.</msg>
+<arg>click</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clicks, presses or releases a mouse button.</doc>
+<status status="PASS" start="2025-09-02T19:49:39.751561" elapsed="0.053832"/>
+</kw>
+<kw name="Mouse Button" owner="Browser">
+<msg time="2025-09-02T19:49:39.805393" level="INFO">No coordinates where set. Action appears at current position.</msg>
+<msg time="2025-09-02T19:49:39.806899" level="INFO">No coordinates where set. Action appears at current position.</msg>
+<msg time="2025-09-02T19:49:39.817075" level="INFO">No coordinates where set. Action appears at current position.</msg>
+<arg>click</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clicks, presses or releases a mouse button.</doc>
+<status status="PASS" start="2025-09-02T19:49:39.805393" elapsed="0.013765"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-02T19:49:41.819334" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-02T19:49:39.819158" elapsed="2.000176"/>
+</kw>
+<kw name="Keyboard Input" owner="Browser">
+<arg>insertText</arg>
+<arg>TestRoot</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Input text into page with virtual keyboard.</doc>
+<status status="PASS" start="2025-09-02T19:49:41.819842" elapsed="0.011542"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-02T19:49:43.833284" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-02T19:49:41.832780" elapsed="2.000504"/>
+</kw>
+<kw name="Keyboard Key" owner="Browser">
+<arg>press</arg>
+<arg>Tab</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Press a keyboard key on the virtual keyboard or set a key up or down.</doc>
+<status status="PASS" start="2025-09-02T19:49:43.833284" elapsed="0.053890"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-02T19:49:45.887358" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-02T19:49:43.887174" elapsed="2.000184"/>
+</kw>
+<kw name="Keyboard Input" owner="Browser">
+<arg>insertText</arg>
+<arg>MyUsername</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Input text into page with virtual keyboard.</doc>
+<status status="PASS" start="2025-09-02T19:49:45.887883" elapsed="0.011833"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-02T19:49:46.901047" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-02T19:49:45.900827" elapsed="1.000220"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-09-02T19:49:46.901561" level="INFO">Clicks the element 'css=#svg3'.</msg>
+<arg>css=#svg3</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-09-02T19:49:46.901047" elapsed="0.056061"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-02T19:49:53.958323" level="INFO">Slept 7 seconds.</msg>
+<arg>7s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-02T19:49:46.957108" elapsed="7.001215"/>
+</kw>
+<kw name="Keyboard Key" owner="Browser">
+<arg>down</arg>
+<arg>Control</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Press a keyboard key on the virtual keyboard or set a key up or down.</doc>
+<status status="PASS" start="2025-09-02T19:49:53.958323" elapsed="0.011913"/>
+</kw>
+<kw name="Keyboard Key" owner="Browser">
+<arg>press</arg>
+<arg>r</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Press a keyboard key on the virtual keyboard or set a key up or down.</doc>
+<status status="PASS" start="2025-09-02T19:49:53.970236" elapsed="0.010002"/>
+</kw>
+<kw name="Keyboard Key" owner="Browser">
+<arg>up</arg>
+<arg>Control</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Press a keyboard key on the virtual keyboard or set a key up or down.</doc>
+<status status="PASS" start="2025-09-02T19:49:53.981529" elapsed="0.008185"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-02T19:49:58.991975" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-02T19:49:53.990392" elapsed="5.001583"/>
+</kw>
+<kw name="Close Browser" owner="Browser">
+<msg time="2025-09-02T19:49:59.204479" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-09-02T19:49:58.992992" elapsed="0.211487"/>
+</kw>
+<status status="PASS" start="2025-09-02T19:49:20.718102" elapsed="38.486377"/>
 </test>
-<status status="PASS" start="2025-09-02T00:53:09.674422" elapsed="20.927922"/>
+<status status="PASS" start="2025-09-02T19:49:20.624845" elapsed="38.583143"/>
 </suite>
 <statistics>
 <total>
@@ -117,7 +356,7 @@
 <tag>
 </tag>
 <suite>
-<stat name="Login Test" id="s1" pass="1" fail="0" skip="0">Login Test</stat>
+<stat name="Login Browser" id="s1" pass="1" fail="0" skip="0">Login Browser</stat>
 </suite>
 </statistics>
 <errors>

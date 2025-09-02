@@ -1,50 +1,118 @@
-{"level":30,"time":"2025-09-01T20:46:59.677Z","pid":20592,"hostname":"Danny","msg":"Listening on 127.0.0.1:51520"}
-(node:20592) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+{"level":30,"time":"2025-09-02T16:49:21.080Z","pid":22148,"hostname":"Danny","msg":"Listening on 127.0.0.1:63431"}
+(node:22148) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
 (Use `node --trace-deprecation ...` to show where the warning was created)
-{"level":30,"time":"2025-09-01T20:46:59.897Z","pid":20592,"hostname":"Danny","msg":"Start of node method newBrowser"}
-{"level":30,"time":"2025-09-01T20:47:00.020Z","pid":20592,"hostname":"Danny","msg":"Adding browser to stack: chromium, version: 140.0.7339.16"}
-{"level":30,"time":"2025-09-01T20:47:00.021Z","pid":20592,"hostname":"Danny","msg":"End of node method newBrowser"}
-{"level":30,"time":"2025-09-01T20:47:00.021Z","pid":20592,"hostname":"Danny","msg":"Adding 0 contexts to browser"}
-{"level":30,"time":"2025-09-01T20:47:00.025Z","pid":20592,"hostname":"Danny","msg":"Start of node method newPage"}
-{"level":30,"time":"2025-09-01T20:47:00.025Z","pid":20592,"hostname":"Danny","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@e316148493e1219ada2a1d3c496e5c04\"},\"headless\":false,\"_contextStack\":[],\"id\":\"browser=45233f9b-bbd2-4a26-8ed1-3c5c6973d41e\"}"}
-{"level":30,"time":"2025-09-01T20:47:00.031Z","pid":20592,"hostname":"Danny","msg":"Setting default timeout for context context=6835b8c7-7d03-4ca7-9e04-958cedb340a9 to 10000"}
-{"level":30,"time":"2025-09-01T20:47:00.031Z","pid":20592,"hostname":"Danny","msg":"Changed active context: context=6835b8c7-7d03-4ca7-9e04-958cedb340a9"}
-{"level":30,"time":"2025-09-01T20:47:00.105Z","pid":20592,"hostname":"Danny","msg":"Video path: undefined"}
-{"level":30,"time":"2025-09-01T20:47:00.105Z","pid":20592,"hostname":"Danny","msg":"Changed active page"}
-{"level":30,"time":"2025-09-01T20:47:02.548Z","pid":20592,"hostname":"Danny","msg":"End of node method newPage"}
-{"level":30,"time":"2025-09-01T20:47:02.552Z","pid":20592,"hostname":"Danny","msg":"Start of node method click"}
-{"level":30,"time":"2025-09-01T20:47:02.552Z","pid":20592,"hostname":"Danny","msg":"Strict mode is enabled, find Locator with text=Login in page."}
-{"level":30,"time":"2025-09-01T20:47:02.948Z","pid":20592,"hostname":"Danny","msg":"End of node method click"}
-{"level":30,"time":"2025-09-01T20:47:02.950Z","pid":20592,"hostname":"Danny","msg":"Start of node method fillText"}
-{"level":30,"time":"2025-09-01T20:47:02.950Z","pid":20592,"hostname":"Danny","msg":"Strict mode is enabled, find Locator with css=input[type=\"email\"] in page."}
-{"level":30,"time":"2025-09-01T20:47:03.008Z","pid":20592,"hostname":"Danny","msg":"End of node method fillText"}
-{"level":30,"time":"2025-09-01T20:47:03.010Z","pid":20592,"hostname":"Danny","msg":"Start of node method click"}
-{"level":30,"time":"2025-09-01T20:47:03.010Z","pid":20592,"hostname":"Danny","msg":"Strict mode is enabled, find Locator with text=Continue in page."}
-{"level":30,"time":"2025-09-01T20:47:03.058Z","pid":20592,"hostname":"Danny","msg":"End of node method click"}
-{"level":30,"time":"2025-09-01T20:47:03.060Z","pid":20592,"hostname":"Danny","msg":"Start of node method fillText"}
-{"level":30,"time":"2025-09-01T20:47:03.060Z","pid":20592,"hostname":"Danny","msg":"Strict mode is enabled, find Locator with css=input[type=\"password\"] in page."}
-{"level":30,"time":"2025-09-01T20:47:03.712Z","pid":20592,"hostname":"Danny","msg":"End of node method fillText"}
-{"level":30,"time":"2025-09-01T20:47:03.721Z","pid":20592,"hostname":"Danny","msg":"Start of node method click"}
-{"level":30,"time":"2025-09-01T20:47:03.721Z","pid":20592,"hostname":"Danny","msg":"Strict mode is enabled, find Locator with text=Continue in page."}
-{"level":30,"time":"2025-09-01T20:47:03.757Z","pid":20592,"hostname":"Danny","msg":"End of node method click"}
-{"level":30,"time":"2025-09-01T20:47:05.765Z","pid":20592,"hostname":"Danny","msg":"Start of node method click"}
-{"level":30,"time":"2025-09-01T20:47:05.765Z","pid":20592,"hostname":"Danny","msg":"Strict mode is enabled, find Locator with css=.js-tour-new-mm in page."}
-{"level":30,"time":"2025-09-01T20:47:07.856Z","pid":20592,"hostname":"Danny","msg":"End of node method click"}
-{"level":30,"time":"2025-09-01T20:47:07.859Z","pid":20592,"hostname":"Danny","msg":"Start of node method click"}
-{"level":30,"time":"2025-09-01T20:47:07.859Z","pid":20592,"hostname":"Danny","msg":"Strict mode is enabled, find Locator with css=#svg in page."}
-{"level":30,"time":"2025-09-01T20:47:08.397Z","pid":20592,"hostname":"Danny","msg":"End of node method click"}
-{"level":30,"time":"2025-09-01T20:47:09.404Z","pid":20592,"hostname":"Danny","msg":"Start of node method press"}
-{"level":30,"time":"2025-09-01T20:47:09.404Z","pid":20592,"hostname":"Danny","msg":"Strict mode is enabled, find Locator with :focus in page."}
-{"level":30,"time":"2025-09-01T20:47:11.836Z","pid":20592,"hostname":"Danny","msg":"End of node method press"}
-{"level":30,"time":"2025-09-01T20:47:11.838Z","pid":20592,"hostname":"Danny","msg":"Start of node method fillText"}
-{"level":30,"time":"2025-09-01T20:47:11.838Z","pid":20592,"hostname":"Danny","msg":"Strict mode is enabled, find Locator with :focus in page."}
-{"level":30,"time":"2025-09-01T20:47:11.847Z","pid":20592,"hostname":"Danny","msg":"End of node method fillText"}
-{"level":30,"time":"2025-09-01T20:47:11.849Z","pid":20592,"hostname":"Danny","msg":"Start of node method press"}
-{"level":30,"time":"2025-09-01T20:47:11.849Z","pid":20592,"hostname":"Danny","msg":"Strict mode is enabled, find Locator with :focus in page."}
-{"level":30,"time":"2025-09-01T20:47:11.894Z","pid":20592,"hostname":"Danny","msg":"End of node method press"}
-{"level":30,"time":"2025-09-01T20:47:11.896Z","pid":20592,"hostname":"Danny","msg":"Start of node method closeBrowser"}
-{"level":30,"time":"2025-09-01T20:47:11.906Z","pid":20592,"hostname":"Danny","msg":"Removed page=e5cadec1-3fea-4e03-8c58-f46445929b2b from context=6835b8c7-7d03-4ca7-9e04-958cedb340a9 page stack"}
-{"level":30,"time":"2025-09-01T20:47:12.046Z","pid":20592,"hostname":"Danny","msg":"End of node method closeBrowser"}
+{"level":30,"time":"2025-09-02T16:49:21.290Z","pid":22148,"hostname":"Danny","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2025-09-02T16:49:21.471Z","pid":22148,"hostname":"Danny","msg":"Adding browser to stack: chromium, version: 140.0.7339.16"}
+{"level":30,"time":"2025-09-02T16:49:21.472Z","pid":22148,"hostname":"Danny","msg":"End of node method newBrowser"}
+{"level":30,"time":"2025-09-02T16:49:21.472Z","pid":22148,"hostname":"Danny","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2025-09-02T16:49:21.484Z","pid":22148,"hostname":"Danny","msg":"Start of node method newContext"}
+{"level":30,"time":"2025-09-02T16:49:21.484Z","pid":22148,"hostname":"Danny","msg":"Creating new context with options: {\"acceptDownloads\":true,\"bypassCSP\":false,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":{\"height\":1080,\"width\":1920}}"}
+{"level":30,"time":"2025-09-02T16:49:21.484Z","pid":22148,"hostname":"Danny","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@e694995fb63833a609667ca300ba79f6\"},\"headless\":false,\"_contextStack\":[],\"id\":\"browser=41a6a24e-d3e2-4ae5-9e6c-b8dfee9d56bf\"}"}
+{"level":30,"time":"2025-09-02T16:49:21.484Z","pid":22148,"hostname":"Danny","msg":"Trace file: "}
+{"level":30,"time":"2025-09-02T16:49:21.492Z","pid":22148,"hostname":"Danny","msg":"Setting default timeout for context context=84f3ab63-9c11-48d2-83ef-226c37f154c0 to 10000"}
+{"level":30,"time":"2025-09-02T16:49:21.492Z","pid":22148,"hostname":"Danny","msg":"End of node method newContext"}
+{"level":30,"time":"2025-09-02T16:49:21.492Z","pid":22148,"hostname":"Danny","msg":"Changed active context: context=84f3ab63-9c11-48d2-83ef-226c37f154c0"}
+{"level":30,"time":"2025-09-02T16:49:21.496Z","pid":22148,"hostname":"Danny","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-09-02T16:49:21.496Z","pid":22148,"hostname":"Danny","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@e694995fb63833a609667ca300ba79f6\"},\"headless\":false,\"_contextStack\":[{\"id\":\"context=84f3ab63-9c11-48d2-83ef-226c37f154c0\",\"c\":{\"_type\":\"BrowserContext\",\"_guid\":\"browser-context@8424834612b6b338839385a90b13a824\"},\"pageStack\":[],\"options\":{\"acceptDownloads\":true,\"bypassCSP\":false,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":{\"height\":1080,\"width\":1920}},\"traceFile\":\"\"}],\"id\":\"browser=41a6a24e-d3e2-4ae5-9e6c-b8dfee9d56bf\"}"}
+{"level":30,"time":"2025-09-02T16:49:21.577Z","pid":22148,"hostname":"Danny","msg":"Video path: undefined"}
+{"level":30,"time":"2025-09-02T16:49:21.577Z","pid":22148,"hostname":"Danny","msg":"Changed active page"}
+{"level":30,"time":"2025-09-02T16:49:23.985Z","pid":22148,"hostname":"Danny","msg":"End of node method newPage"}
+{"level":30,"time":"2025-09-02T16:49:24.994Z","pid":22148,"hostname":"Danny","msg":"Start of node method click"}
+{"level":30,"time":"2025-09-02T16:49:24.994Z","pid":22148,"hostname":"Danny","msg":"Strict mode is enabled, find Locator with text=Login in page."}
+{"level":30,"time":"2025-09-02T16:49:25.405Z","pid":22148,"hostname":"Danny","msg":"End of node method click"}
+{"level":30,"time":"2025-09-02T16:49:25.407Z","pid":22148,"hostname":"Danny","msg":"Start of node method click"}
+{"level":30,"time":"2025-09-02T16:49:25.407Z","pid":22148,"hostname":"Danny","msg":"Strict mode is enabled, find Locator with input[type=\"email\"] in page."}
+{"level":30,"time":"2025-09-02T16:49:25.489Z","pid":22148,"hostname":"Danny","msg":"End of node method click"}
+{"level":30,"time":"2025-09-02T16:49:25.491Z","pid":22148,"hostname":"Danny","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-09-02T16:49:25.491Z","pid":22148,"hostname":"Danny","msg":"Strict mode is enabled, find Locator with input[type=\"email\"] in page."}
+{"level":30,"time":"2025-09-02T16:49:25.497Z","pid":22148,"hostname":"Danny","msg":"End of node method fillText"}
+{"level":30,"time":"2025-09-02T16:49:25.499Z","pid":22148,"hostname":"Danny","msg":"Start of node method click"}
+{"level":30,"time":"2025-09-02T16:49:25.500Z","pid":22148,"hostname":"Danny","msg":"Strict mode is enabled, find Locator with text=Continue in page."}
+{"level":30,"time":"2025-09-02T16:49:25.537Z","pid":22148,"hostname":"Danny","msg":"End of node method click"}
+{"level":30,"time":"2025-09-02T16:49:27.546Z","pid":22148,"hostname":"Danny","msg":"Start of node method click"}
+{"level":30,"time":"2025-09-02T16:49:27.546Z","pid":22148,"hostname":"Danny","msg":"Strict mode is enabled, find Locator with input[type=\"password\"] in page."}
+{"level":30,"time":"2025-09-02T16:49:27.594Z","pid":22148,"hostname":"Danny","msg":"End of node method click"}
+{"level":30,"time":"2025-09-02T16:49:27.597Z","pid":22148,"hostname":"Danny","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-09-02T16:49:27.597Z","pid":22148,"hostname":"Danny","msg":"Strict mode is enabled, find Locator with input[type=\"password\"] in page."}
+{"level":30,"time":"2025-09-02T16:49:27.602Z","pid":22148,"hostname":"Danny","msg":"End of node method fillText"}
+{"level":30,"time":"2025-09-02T16:49:28.609Z","pid":22148,"hostname":"Danny","msg":"Start of node method click"}
+{"level":30,"time":"2025-09-02T16:49:28.609Z","pid":22148,"hostname":"Danny","msg":"Strict mode is enabled, find Locator with text=Continue in page."}
+{"level":30,"time":"2025-09-02T16:49:28.645Z","pid":22148,"hostname":"Danny","msg":"End of node method click"}
+{"level":30,"time":"2025-09-02T16:49:31.651Z","pid":22148,"hostname":"Danny","msg":"Start of node method click"}
+{"level":30,"time":"2025-09-02T16:49:31.651Z","pid":22148,"hostname":"Danny","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"js-octopus-app-container\"]/div/div[1]/div[2]/div[5]/div/div[1]/div[2] in page."}
+{"level":30,"time":"2025-09-02T16:49:33.562Z","pid":22148,"hostname":"Danny","msg":"End of node method click"}
+{"level":30,"time":"2025-09-02T16:49:34.570Z","pid":22148,"hostname":"Danny","msg":"Start of node method click"}
+{"level":30,"time":"2025-09-02T16:49:34.571Z","pid":22148,"hostname":"Danny","msg":"Strict mode is enabled, find Locator with css=#svg in page."}
+{"level":30,"time":"2025-09-02T16:49:34.659Z","pid":22148,"hostname":"Danny","msg":"End of node method click"}
+{"level":30,"time":"2025-09-02T16:49:35.665Z","pid":22148,"hostname":"Danny","msg":"Start of node method mouseMove"}
+{"level":30,"time":"2025-09-02T16:49:35.665Z","pid":22148,"hostname":"Danny","msg":"Invoking mouse action move with params {\"x\":1032,\"y\":175,\"options\":{\"steps\":1}}"}
+{"level":30,"time":"2025-09-02T16:49:35.671Z","pid":22148,"hostname":"Danny","msg":"End of node method mouseMove"}
+{"level":30,"time":"2025-09-02T16:49:35.674Z","pid":22148,"hostname":"Danny","msg":"Start of node method mouseButton"}
+{"level":30,"time":"2025-09-02T16:49:35.675Z","pid":22148,"hostname":"Danny","msg":"Invoking mouse action down with params {\"options\":{\"button\":\"left\",\"clickCount\":1}}"}
+{"level":30,"time":"2025-09-02T16:49:35.684Z","pid":22148,"hostname":"Danny","msg":"End of node method mouseButton"}
+{"level":30,"time":"2025-09-02T16:49:35.685Z","pid":22148,"hostname":"Danny","msg":"Start of node method mouseButton"}
+{"level":30,"time":"2025-09-02T16:49:35.685Z","pid":22148,"hostname":"Danny","msg":"Invoking mouse action up with params {\"options\":{\"button\":\"left\",\"clickCount\":1}}"}
+{"level":30,"time":"2025-09-02T16:49:35.686Z","pid":22148,"hostname":"Danny","msg":"End of node method mouseButton"}
+{"level":30,"time":"2025-09-02T16:49:37.694Z","pid":22148,"hostname":"Danny","msg":"Start of node method mouseButton"}
+{"level":30,"time":"2025-09-02T16:49:37.695Z","pid":22148,"hostname":"Danny","msg":"Invoking mouse action down with params {\"options\":{\"button\":\"left\",\"clickCount\":1}}"}
+{"level":30,"time":"2025-09-02T16:49:37.703Z","pid":22148,"hostname":"Danny","msg":"End of node method mouseButton"}
+{"level":30,"time":"2025-09-02T16:49:37.707Z","pid":22148,"hostname":"Danny","msg":"Start of node method mouseButton"}
+{"level":30,"time":"2025-09-02T16:49:37.707Z","pid":22148,"hostname":"Danny","msg":"Invoking mouse action up with params {\"options\":{\"button\":\"left\",\"clickCount\":1}}"}
+{"level":30,"time":"2025-09-02T16:49:37.718Z","pid":22148,"hostname":"Danny","msg":"End of node method mouseButton"}
+{"level":30,"time":"2025-09-02T16:49:37.722Z","pid":22148,"hostname":"Danny","msg":"Start of node method mouseButton"}
+{"level":30,"time":"2025-09-02T16:49:37.722Z","pid":22148,"hostname":"Danny","msg":"Invoking mouse action down with params {\"options\":{\"button\":\"left\",\"clickCount\":1}}"}
+{"level":30,"time":"2025-09-02T16:49:37.730Z","pid":22148,"hostname":"Danny","msg":"End of node method mouseButton"}
+{"level":30,"time":"2025-09-02T16:49:37.736Z","pid":22148,"hostname":"Danny","msg":"Start of node method mouseButton"}
+{"level":30,"time":"2025-09-02T16:49:37.736Z","pid":22148,"hostname":"Danny","msg":"Invoking mouse action up with params {\"options\":{\"button\":\"left\",\"clickCount\":1}}"}
+{"level":30,"time":"2025-09-02T16:49:37.739Z","pid":22148,"hostname":"Danny","msg":"End of node method mouseButton"}
+{"level":30,"time":"2025-09-02T16:49:37.742Z","pid":22148,"hostname":"Danny","msg":"Start of node method mouseButton"}
+{"level":30,"time":"2025-09-02T16:49:37.742Z","pid":22148,"hostname":"Danny","msg":"Invoking mouse action down with params {\"options\":{\"button\":\"left\",\"clickCount\":1}}"}
+{"level":30,"time":"2025-09-02T16:49:37.743Z","pid":22148,"hostname":"Danny","msg":"End of node method mouseButton"}
+{"level":30,"time":"2025-09-02T16:49:37.745Z","pid":22148,"hostname":"Danny","msg":"Start of node method mouseButton"}
+{"level":30,"time":"2025-09-02T16:49:37.745Z","pid":22148,"hostname":"Danny","msg":"Invoking mouse action up with params {\"options\":{\"button\":\"left\",\"clickCount\":1}}"}
+{"level":30,"time":"2025-09-02T16:49:37.746Z","pid":22148,"hostname":"Danny","msg":"End of node method mouseButton"}
+{"level":30,"time":"2025-09-02T16:49:37.747Z","pid":22148,"hostname":"Danny","msg":"Start of node method mouseButton"}
+{"level":30,"time":"2025-09-02T16:49:37.747Z","pid":22148,"hostname":"Danny","msg":"Invoking mouse action down with params {\"options\":{\"button\":\"left\",\"clickCount\":1}}"}
+{"level":30,"time":"2025-09-02T16:49:37.749Z","pid":22148,"hostname":"Danny","msg":"End of node method mouseButton"}
+{"level":30,"time":"2025-09-02T16:49:37.750Z","pid":22148,"hostname":"Danny","msg":"Start of node method mouseButton"}
+{"level":30,"time":"2025-09-02T16:49:37.750Z","pid":22148,"hostname":"Danny","msg":"Invoking mouse action up with params {\"options\":{\"button\":\"left\",\"clickCount\":1}}"}
+{"level":30,"time":"2025-09-02T16:49:37.751Z","pid":22148,"hostname":"Danny","msg":"End of node method mouseButton"}
+{"level":30,"time":"2025-09-02T16:49:39.757Z","pid":22148,"hostname":"Danny","msg":"Start of node method mouseButton"}
+{"level":30,"time":"2025-09-02T16:49:39.758Z","pid":22148,"hostname":"Danny","msg":"Invoking mouse action down with params {\"options\":{\"button\":\"left\",\"clickCount\":1}}"}
+{"level":30,"time":"2025-09-02T16:49:39.793Z","pid":22148,"hostname":"Danny","msg":"End of node method mouseButton"}
+{"level":30,"time":"2025-09-02T16:49:39.795Z","pid":22148,"hostname":"Danny","msg":"Start of node method mouseButton"}
+{"level":30,"time":"2025-09-02T16:49:39.795Z","pid":22148,"hostname":"Danny","msg":"Invoking mouse action up with params {\"options\":{\"button\":\"left\",\"clickCount\":1}}"}
+{"level":30,"time":"2025-09-02T16:49:39.805Z","pid":22148,"hostname":"Danny","msg":"End of node method mouseButton"}
+{"level":30,"time":"2025-09-02T16:49:39.807Z","pid":22148,"hostname":"Danny","msg":"Start of node method mouseButton"}
+{"level":30,"time":"2025-09-02T16:49:39.807Z","pid":22148,"hostname":"Danny","msg":"Invoking mouse action down with params {\"options\":{\"button\":\"left\",\"clickCount\":1}}"}
+{"level":30,"time":"2025-09-02T16:49:39.816Z","pid":22148,"hostname":"Danny","msg":"End of node method mouseButton"}
+{"level":30,"time":"2025-09-02T16:49:39.817Z","pid":22148,"hostname":"Danny","msg":"Start of node method mouseButton"}
+{"level":30,"time":"2025-09-02T16:49:39.817Z","pid":22148,"hostname":"Danny","msg":"Invoking mouse action up with params {\"options\":{\"button\":\"left\",\"clickCount\":1}}"}
+{"level":30,"time":"2025-09-02T16:49:39.819Z","pid":22148,"hostname":"Danny","msg":"End of node method mouseButton"}
+{"level":30,"time":"2025-09-02T16:49:41.824Z","pid":22148,"hostname":"Danny","msg":"Start of node method keyboardInput"}
+{"level":30,"time":"2025-09-02T16:49:41.824Z","pid":22148,"hostname":"Danny","msg":"Invoking keyboard action insertText with params [\"TestRoot\",{\"delay\":0}]"}
+{"level":30,"time":"2025-09-02T16:49:41.830Z","pid":22148,"hostname":"Danny","msg":"End of node method keyboardInput"}
+{"level":30,"time":"2025-09-02T16:49:43.838Z","pid":22148,"hostname":"Danny","msg":"Start of node method keyboardKey"}
+{"level":30,"time":"2025-09-02T16:49:43.839Z","pid":22148,"hostname":"Danny","msg":"Invoking keyboard action press with params [\"Tab\"]"}
+{"level":30,"time":"2025-09-02T16:49:43.887Z","pid":22148,"hostname":"Danny","msg":"End of node method keyboardKey"}
+{"level":30,"time":"2025-09-02T16:49:45.892Z","pid":22148,"hostname":"Danny","msg":"Start of node method keyboardInput"}
+{"level":30,"time":"2025-09-02T16:49:45.893Z","pid":22148,"hostname":"Danny","msg":"Invoking keyboard action insertText with params [\"MyUsername\",{\"delay\":0}]"}
+{"level":30,"time":"2025-09-02T16:49:45.898Z","pid":22148,"hostname":"Danny","msg":"End of node method keyboardInput"}
+{"level":30,"time":"2025-09-02T16:49:46.902Z","pid":22148,"hostname":"Danny","msg":"Start of node method click"}
+{"level":30,"time":"2025-09-02T16:49:46.902Z","pid":22148,"hostname":"Danny","msg":"Strict mode is enabled, find Locator with css=#svg3 in page."}
+{"level":30,"time":"2025-09-02T16:49:46.956Z","pid":22148,"hostname":"Danny","msg":"End of node method click"}
+{"level":30,"time":"2025-09-02T16:49:53.964Z","pid":22148,"hostname":"Danny","msg":"Start of node method keyboardKey"}
+{"level":30,"time":"2025-09-02T16:49:53.964Z","pid":22148,"hostname":"Danny","msg":"Invoking keyboard action down with params [\"Control\"]"}
+{"level":30,"time":"2025-09-02T16:49:53.968Z","pid":22148,"hostname":"Danny","msg":"End of node method keyboardKey"}
+{"level":30,"time":"2025-09-02T16:49:53.975Z","pid":22148,"hostname":"Danny","msg":"Start of node method keyboardKey"}
+{"level":30,"time":"2025-09-02T16:49:53.975Z","pid":22148,"hostname":"Danny","msg":"Invoking keyboard action press with params [\"r\"]"}
+{"level":30,"time":"2025-09-02T16:49:53.979Z","pid":22148,"hostname":"Danny","msg":"End of node method keyboardKey"}
+{"level":30,"time":"2025-09-02T16:49:53.985Z","pid":22148,"hostname":"Danny","msg":"Start of node method keyboardKey"}
+{"level":30,"time":"2025-09-02T16:49:53.985Z","pid":22148,"hostname":"Danny","msg":"Invoking keyboard action up with params [\"Control\"]"}
+{"level":30,"time":"2025-09-02T16:49:53.988Z","pid":22148,"hostname":"Danny","msg":"End of node method keyboardKey"}
+{"level":30,"time":"2025-09-02T16:49:58.997Z","pid":22148,"hostname":"Danny","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2025-09-02T16:49:59.011Z","pid":22148,"hostname":"Danny","msg":"Removed page=1b6c7355-12a3-4a59-98e0-5f30f1b59e4d from context=84f3ab63-9c11-48d2-83ef-226c37f154c0 page stack"}
+{"level":30,"time":"2025-09-02T16:49:59.204Z","pid":22148,"hostname":"Danny","msg":"End of node method closeBrowser"}
 ================= Original suppressed error =================
 Error: Browser has been closed.
     at PlaywrightState.getActiveBrowser (C:\Users\PC\AppData\Local\Programs\Python\Python311\Lib\site-packages\Browser\wrapper\index.js:12227:15)
@@ -58,8 +126,8 @@ Error: Browser has been closed.
     at endReadableNT (node:internal/streams/readable:1696:12)
     at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
 =============================================================
-{"level":30,"time":"2025-09-01T20:47:12.052Z","pid":20592,"hostname":"Danny","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2025-09-01T20:47:12.052Z","pid":20592,"hostname":"Danny","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-09-02T16:49:59.208Z","pid":22148,"hostname":"Danny","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-09-02T16:49:59.208Z","pid":22148,"hostname":"Danny","msg":"End of node method getBrowserCatalog"}
 ================= Original suppressed error =================
 Error: Browser has been closed.
     at PlaywrightState.getActiveBrowser (C:\Users\PC\AppData\Local\Programs\Python\Python311\Lib\site-packages\Browser\wrapper\index.js:12227:15)
@@ -73,7 +141,7 @@ Error: Browser has been closed.
     at endReadableNT (node:internal/streams/readable:1696:12)
     at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
 =============================================================
-{"level":30,"time":"2025-09-01T20:47:12.056Z","pid":20592,"hostname":"Danny","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2025-09-01T20:47:12.056Z","pid":20592,"hostname":"Danny","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2025-09-01T20:47:12.081Z","pid":20592,"hostname":"Danny","msg":"Start of node method closeAllBrowsers"}
-{"level":30,"time":"2025-09-01T20:47:12.081Z","pid":20592,"hostname":"Danny","msg":"End of node method closeAllBrowsers"}
+{"level":30,"time":"2025-09-02T16:49:59.210Z","pid":22148,"hostname":"Danny","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-09-02T16:49:59.210Z","pid":22148,"hostname":"Danny","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-09-02T16:49:59.232Z","pid":22148,"hostname":"Danny","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2025-09-02T16:49:59.233Z","pid":22148,"hostname":"Danny","msg":"End of node method closeAllBrowsers"}
